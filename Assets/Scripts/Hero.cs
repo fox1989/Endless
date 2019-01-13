@@ -56,7 +56,7 @@ public class Hero : MonoBehaviour
     {
 
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             startAim = true;
             aimLine.gameObject.SetActive(true);
@@ -111,7 +111,7 @@ public class Hero : MonoBehaviour
     /// </summary>
     void OnAim()
     {
-        if (Input.GetMouseButton(0) && startAim)
+        if (Input.GetMouseButton(1) && startAim)
         {
             Vector3 mouseDir = GetMouserDir();
 
